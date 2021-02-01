@@ -17,3 +17,7 @@ The application is able to track the name, type, weight, sets, reps,  duration o
 
 * Application will allow to add and complete the exercise 
 * keep the track of the exercise from the past 
+
+## Demo 
+
+[Link!](./public/ezgif.com-gif-maker.gif)
