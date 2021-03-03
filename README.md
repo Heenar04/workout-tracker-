@@ -20,4 +20,4 @@ The application is able to track the name, type, weight, sets, reps,  duration o
 
 ## Demo 
 
-[Link!](./public/ezgif.com-gif-maker.gif)
+[Link!](./public/fites.com-gif-maker.gif)
