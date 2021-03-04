@@ -3,7 +3,7 @@ const app =require ("express").Router();
 module.exports = function (app) {
     // Show all workouts
 app.get("/api/workouts", (req, res) => {
-    Exercise.Workout.find({}).then(data => {
+    Exercise.find({}).then(data => {
         res.json(data);
     })
     .catch(err => {
@@ -12,7 +12,7 @@ app.get("/api/workouts", (req, res) => {
   })
   // for 7 days range 
   app.get("/api/workouts/range", (req, res) => {
-    Exercise.Workout.aggregate([
+    Exercise.aggregate([
       {
         $addFields:{
           totalduration : {
@@ -41,7 +41,7 @@ app.get("/api/workouts", (req, res) => {
   
   // Make an update to the current _id 
   app.put("/api/workouts/:id", ({body,params}, res) => {
-    Exercise.Workout.findByIdAndUpdate(
+    Exercise.findByIdAndUpdate(
         params.id,
        {$push:{ exercises: body }}
     ).then((data) => { 
