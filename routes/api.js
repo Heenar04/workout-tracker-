@@ -32,7 +32,7 @@ app.get("/api/workouts", (req, res) => {
 
   // Insert a workout
   app.post("/api/workouts", (req,res) => {
-    Exercise.Workout.create({}).then((data) => {
+    Exercise.create({}).then((data) => {
       res.json(data);
     }).catch(err => {
         console.log(err);
