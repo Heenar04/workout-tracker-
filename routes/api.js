@@ -1,5 +1,5 @@
 const db = require("../models");
-
+const app =require ("express").Router();
 module.exports = function (app) {
     // Show all workouts
 app.get("/api/workouts", (req, res) => {
